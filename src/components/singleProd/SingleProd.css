@@ -1,74 +1,72 @@
 .singleProd {
-    border: 0.5px solid gainsboro;
+    background: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
-    margin-left: 110px;
-    width: 275px;
+    min-width: 200px;
+    max-width: 300px;
     height: 375px;
-    margin-bottom: 40px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+    box-shadow: none;
+    transition: all 300ms ease-in-out;
+    margin: 20px;
+    border-radius: 8px;
 }
 
 .singleProd:hover {
-    transform: scale(1.05, 1.05);
-    box-shadow: azure;
-    box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
-    transition: 300ms;
+    box-shadow: rgb(0 0 0 / 15%) -3px 6px 18px 5px;
+
 }
 
 .prodImage {
-    height: 20vh;
-    width: 12vw;
-    object-fit: contain;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+    transition: all 300ms ease-out;
+    object-fit: cover;
+    transform: scale(1.1, 1.1);
+}
+
+.prodImage:hover{
+    transform: scale(1.1, 1.1);
 }
 
 .prodDescription {
-    padding: 30px 15px 0px 15px;
-    height : 97.5px;
+    padding: 30px 15px 0 15px;
+    height : 97px;
     display: flex;
     justify-content : center;
     align-items: center;
 }
 
 .prodButtons {
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
-    /* display: inline-block; */
-    position: relative;
-    top: 17px;
+    width: 100%;
 }
 
 .viewButton {
-    cursor: pointer;
-    border: 1px solid gainsboro;
-    border-left: none;
-    height: 50px;
-    width: 137.5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: rgb(250 79 104 / 92%);
-    color: rgb(46, 43, 46);
+    background-color: red;
+    border-radius: 0 0 0 8px;
 }
 
 .addToCartButton {
-    cursor: pointer;
-    border: 1px solid gainsboro;
-    border-right: none;
-    height: 50px;
-    width: 137.5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: rgb(37 227 154);
-    color: rgb(72, 67, 72);
+    border-radius: 0 0 8px 0;
+    background: dodgerblue;
 }
+.viewButton:hover{
+    background: darkred;
+}.addToCartButton:hover{
+    background: darkblue;
+}
+.addToCartButton,
+.viewButton {
+    cursor: pointer;
+border: none;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    height: 50px;
+    transition: all 0.2s ease-in-out;
 
-.addToCartButton:hover,
-.viewButton:hover {
-    transform: scale(1.1, 1.1);
-    transition: 0.3s;
 }

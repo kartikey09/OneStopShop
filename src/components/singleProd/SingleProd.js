@@ -26,7 +26,10 @@ function SingleProd({ val, cartQty, setCartVal, data, setCartItem }) {
 
     return (
         <div className='singleProd'>
+            <div style={{maxHeight: "200px"}}>
+
             <img className='prodImage' src={val.image} alt = 'img'></img>
+            </div>
             <div className='prodDescription'> {name}</div>
             <div className='prodButtons'>
                 <button className='viewButton' onClick = {()=>viewButtonClick()}>View</button>

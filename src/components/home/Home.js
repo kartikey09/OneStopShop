@@ -11,10 +11,9 @@ function Home({fetchData, info}) {
 
     return (
         <div className = 'product_container'>
-            {console.log('home')}
             {
-                
-                info.map((val) => <SingleProd  key = {val.id} val = {val} />)
+
+                info.data.map((val) => <SingleProd key = {val.id} val = {val} />)
             }
         </div>
     )
@@ -22,7 +21,7 @@ function Home({fetchData, info}) {
 
 const mapStateToProps = (state) => {
     return {
-        info: state.data.data,
+        info: state.data,
     }
 }
 
