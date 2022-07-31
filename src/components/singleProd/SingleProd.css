@@ -1,0 +1,74 @@
+.singleProd {
+    border: 0.5px solid gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 110px;
+    width: 275px;
+    height: 375px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+}
+
+.singleProd:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: azure;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+    transition: 300ms;
+}
+
+.prodImage {
+    height: 20vh;
+    width: 12vw;
+    object-fit: contain;
+}
+
+.prodDescription {
+    padding: 30px 15px 0px 15px;
+    height : 97.5px;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+}
+
+.prodButtons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    /* display: inline-block; */
+    position: relative;
+    top: 17px;
+}
+
+.viewButton {
+    cursor: pointer;
+    border: 1px solid gainsboro;
+    border-left: none;
+    height: 50px;
+    width: 137.5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(250 79 104 / 92%);
+    color: rgb(46, 43, 46);
+}
+
+.addToCartButton {
+    cursor: pointer;
+    border: 1px solid gainsboro;
+    border-right: none;
+    height: 50px;
+    width: 137.5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(37 227 154);
+    color: rgb(72, 67, 72);
+}
+
+.addToCartButton:hover,
+.viewButton:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
+}

@@ -1,0 +1,6 @@
+export const GET_DATA_SUCCESS = 'GET_DATA_SUCCESS';
+export const GET_DATA_REQUEST = 'GET_DATA_REQUEST';
+export const GET_DATA_FAILURE = 'GET_DATA_FAILURE';
+export const SET_CART_VALUE = 'SET_CART_VALUE';
+export const SET_CART_ITEM = 'SET_CART_ITEM';
+export const SORT_BY_ORDER = 'SORT_BY_ORDER';

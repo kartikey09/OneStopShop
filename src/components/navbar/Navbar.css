@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+
+.navbar {
+    color : #e2e2e2;
+    height : 60px;
+    background-color: #3b3b3b;
+    display : flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+
+}
+
+.navbar:hover {
+    transition: 200ms ease;
+    box-shadow: rgb(0 0 0 / 40%) 0px 4px 5px;
+}
+.navbar-links ul{
+    font-weight: 800;
+    margin: 0%;
+    padding : 0%;
+    padding-right: 4rem;
+    display: flex;
+}
+
+.navbar li{
+    cursor: pointer;
+    list-style: none;
+    padding: 1.2rem;
+    display: block;
+    padding : auto;
+}
+
+.ShopName {
+    margin-left: rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+
+}
+
+.navbar-links li:hover {
+    background-color: rgb(92, 92, 92);
+}
+
+.hamburgerMenu{
+    position :absolute;
+    display : none;
+    top : 1.25rem;
+    right : 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    height : 20px;
+    width : 30px
+
+}
+
+.hamburgerMenu .bar{
+    height : 3px;
+    width : 100%;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+}
+
+@media(max-width : 600px){
+    .hamburgerMenu{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width : 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        font-weight: 400;
+        padding-right: 0;
+        width : 100%; 
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .navbar-links.active {
+        display: flex;
+    }
+}
